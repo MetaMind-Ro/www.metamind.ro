@@ -9,9 +9,15 @@
 # General
 --------------------------------------------------------------*/
 
-
-
+.resize{
+  width: 500px;
+  height: 500px;
 }
+
+
+
+
+
 body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
@@ -720,7 +726,7 @@ section {
 
 .portfolio .portfolio-wrap .portfolio-info p {
   color: #364146;
-  font-size: 14px;
+  font-size: 15px;
   text-transform: uppercase;
 }
 
