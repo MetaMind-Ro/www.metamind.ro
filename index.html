@@ -218,12 +218,13 @@
         </div>
 
         <div id="trainings" class="row portfolio-container" data-aos="" data-aos-delay="">
-
-          <div id="trainingId" class="col-lg-6 col-md-10 portfolio-item " style="display: none;">
+		
+		
+          <div id="trainingId" class="col-lg-4 col-md-10 portfolio-item " style="display: none;">
             <div class="portfolio-wrap">
-              <img id="trainingImg" id="trainingData" class="lazyload"  style="width: 550px;height: 500px; !important" alt="">
+              <img id="trainingImg" id="trainingData" class="lazyload"  style="width: 300px;height: 300px; !important" alt="">
+			  <h4 id="trainingName"></h4>
               <div class="portfolio-info">
-                <h4 id="trainingName"></h4>
                 <p id="trainingDescription"></p>
               </div>
 
@@ -232,6 +233,8 @@
               </div>
             </div>
           </div>
+		  
+
         </div>
       </div>
     </section><!-- End Portfolio Section -->
@@ -420,8 +423,9 @@
 		
 		var itm = document.getElementById("trainingId");
 		itm.className = item.Filter + " " + class1;
-    document.getElementById("trainingImg").src = item.url;
-    //document.getElementById("trainingData").data-src = item.url;			
+		//document.getElementById("trainingImg").src = item.url;
+		document.getElementById("trainingImg").src = "assets/img/Portofolio/training.png";
+		//document.getElementById("trainingData").data-src = item.url;			
 		document.getElementById("trainingName").innerHTML = item.id;
 		document.getElementById("trainingDescription").innerHTML = item.Description;
 		document.getElementById("trainingDetails").setAttribute('href', hrefDetails + "?id=" + id);
